@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Apresentação</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">Sobre mim</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#experience">Experiência</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="about" class="animate">
-    <h1>Sobre mim</h1>
-    <p>Olá, meu nome é Rayslan e sou Analista de Suporte há 1 ano.</p>
-  </section>
-
-  <section id="skills" class="animate">
-    <h1>Habilidades</h1>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Linux Server</li>
-      <li>Redes de Computadores</li>
-    </ul>
-  </section>
-
-  <section id="experience" class="animate">
-    <h1>Experiência</h1>
-    <ul>
-      <li>Suporte N1 na JrTech Relógios de Ponto e Gestão de Pessoas. (2021-presente)</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="animate">
-    <h1>Contato</h1>
-    <form id="contact-form">
-      <label for="name-input">Nome:Rayslan Vieira Gandra</label>
-      <input type="text" id="name-input" name="name">
-
-      <label for="email-input">Email:Rayslan Vieira Gandra</label>
-      <input type="email" id="email-input" name="email">
-
-      <label for="message-input">Mensagem:</label>
-      <textarea id="message-input" name="message"></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-</body>
+  <head>
+    <title>Minha Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Minha Landing Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Bem-vindo à minha Landing Page!</h2>
+        <p>Aqui você encontrará informações sobre meus projetos e habilidades.</p>
+      </section>
+      <section class="projects">
+        <h3>Meus projetos</h3>
+        <ul>
+          <li>
+            <h4>Projeto 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et orci auctor, lobortis sapien ut, ultricies metus.</p>
+            <a href="#">Veja mais</a>
+          </li>
+          <li>
+            <h4>Projeto 2</h4>
+            <p>Curabitur aliquam feugiat erat, ut rhoncus nulla accumsan ut. Mauris et elit eros. </p>
+            <a href="#">Veja mais</a>
+          </li>
+          <li>
+            <h4>Projeto 3</h4>
+            <p>Nullam malesuada, risus ac malesuada convallis, sem quam malesuada est, sit amet commodo massa nibh vitae elit.</p>
+            <a href="#">Veja mais</a>
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h3>Entre em contato</h3>
+        <form>
+          <label for="name-input">Nome</label>
+          <input type="text" id="name-input" name="name">
+          <label for="email-input">Email</label>
+          <input type="email" id="email-input" name="email">
+          <button type="submit" id="submit-btn">Enviar</button>
+        </form>
+        <div id="success-msg">
+          <p>Mensagem enviada com sucesso!</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
