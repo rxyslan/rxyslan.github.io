@@ -1,60 +1,160 @@
-body {
+/* Reset de estilos */
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
   }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+  /* Estilos gerais */
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
   }
   
-  nav li {
-    margin: 0 1rem;
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
   }
   
-  nav a {
-    color: #fff;
+  a {
+    color: #2e86c1;
     text-decoration: none;
     transition: color 0.3s;
   }
   
-  nav a:hover {
-    color: #ccc;
+  a:hover {
+    color: #1d6fa5;
   }
   
-  section {
-    padding: 2rem;
+  /* Estilos da seção hero */
+  
+  .hero {
+    background-color: #2e86c1;
+    color: #fff;
+    padding: 2em;
   }
   
-  h1 {
-    margin-top: 0;
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
   }
   
-  .animate {
-    opacity: 0;
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
   }
   
-  .animated {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  .hero a {
+    background-color: #fff;
+    color: #2e86c1;
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
   }
   
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  .hero a:hover {
+    background-color: #2e86c1;
+    color: #fff;
   }
   
-  .error {
-    border-color: red;
+  /* Estilos da seção projects */
+  
+  .projects {
+    margin-top: 3em;
   }
   
+  .projects h3 {
+    color: #2e86c1;
+    margin-bottom: 1em;
+  }
+  
+  .projects ul {
+    list-style: none;
+  }
+  
+  .projects li {
+    border: 1px solid #ddd;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+  
+  .projects h4 {
+    margin-bottom: 0.5em;
+  }
+  
+  .projects p {
+    margin-bottom: 1em;
+  }
+  
+  .projects a {
+    background-color: #2e86c1;
+    color: #fff;
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .projects a:hover {
+    background-color: #1d6fa5;
+  }
+  
+  /* Estilos da seção contact */
+  
+  .contact {
+    margin-top: 3em;
+  }
+  
+  .contact h3 {
+    color: #2e86c1;
+    margin-bottom: 1em;
+  }
+  
+  .contact form label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  .contact form input {
+    border: 1px solid #ddd;
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 100%;
+  }
+  
+  #submit-btn {
+    background-color: #2e86c1;
+    border: none;
+    color: #fff;
+    display: block;
+    margin-top: 1em;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  #submit-btn:hover {
+    background-color: #1d6fa5;
+  }
+  
+  #success-msg {
+    background-color: #2ecc71;
+    color: #fff;
+    display: none;
+    margin-top: 1em;
+    padding: 1
+  }
